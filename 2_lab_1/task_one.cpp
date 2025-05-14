@@ -65,3 +65,19 @@ public:
              << ", Grade: " << grade.get_grade() << endl;
     }
 };
+
+int main() {
+    // Create a Course object
+    Course c("CS101", "Introduction to Programming");
+    
+    // Create a Student object
+    Student s("2023001", "Alice Johnson", 20, c);
+    
+    // Set marks
+    s.set_marks(75);
+    
+    // Print student info
+    s.print_info();
+    
+    return 0;
+}

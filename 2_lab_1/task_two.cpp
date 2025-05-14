@@ -87,3 +87,44 @@ void addMarks(string reg_no) {
     }
     cout << "Student not found.\n";
 }
+
+int main() {
+    int choice;
+    do {
+        cout << "\n--- Student Management System ---\n";
+        cout << "1. Add Student\n";
+        cout << "2. Edit Student\n";
+        cout << "3. Add Marks\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch(choice) {
+            case 1: {
+                addStudent();
+                break;
+            }
+            case 2: {
+                string reg_no;
+                cout << "Enter registration number to edit: ";
+                cin >> reg_no;
+                editStudent(reg_no);
+                break;
+            }
+            case 3: {
+                string reg_no;
+                cout << "Enter registration number to add marks: ";
+                cin >> reg_no;
+                addMarks(reg_no);
+                break;
+            }
+            case 4:
+                cout << "Exiting. Goodbye!\n";
+                break;
+            default:
+                cout << "Invalid choice. Please try again.\n";
+        }
+    } while (choice != 4);
+
+    return 0;
+}

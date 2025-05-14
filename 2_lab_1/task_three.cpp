@@ -67,3 +67,15 @@ public:
     }
 };
 
+int main() {
+    Student student;
+    student.inputDetails();
+
+    // Optionally, update marks
+    student.updateMarks();
+
+    // Display details
+    student.displayDetails();
+
+    return 0;
+}
