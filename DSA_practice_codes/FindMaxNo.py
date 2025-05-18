@@ -1,18 +1,13 @@
-numbers = [12, 5, 7, 3, 19, 1, 21, 8]
+arr = [2, 4, 5, 6, 23, 55, 70]
 
-max = numbers[0]
-min = numbers[0]
+max = arr[0]
 
-for i in range(len(numbers)):
-    if numbers[i] > max:
-        max = numbers[i]
-    elif numbers[i] < min:
-        min = numbers[i]
+for i in range(len(arr)):
+    if arr[i] > max:
+        max = arr [i]
 
-
-
-print("Max number is: ", max)
-print("Min number is: ", min)
+print(max)
+     
 
 # This code finds the maximum and minimum numbers in a list of integers. 
 # It initializes the max and min variables with the first element of the list and then iterates through the list to update these variables accordingly. 
